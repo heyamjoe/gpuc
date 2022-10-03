@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Green Park University College</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top shadow">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="/img/gpcu-logo.png" alt="" width="40px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about-gpuc.html" class="nav-link">About GPCU</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Study at GPUC
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Requirements</a></li>
+                <li><a class="dropdown-item" href="#">Fees & Funding</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Apply Now</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="distance-learning.html" class="nav-link"
+                >Distance Learning</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="scholarships.html" class="nav-link"
+                >The KK Scholarship</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="subscribe.html" class="nav-link">Subscribe</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact-us" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <img src="./img/splash.JPG" class="d-block w-100" alt="..." />
+    <div class="container">
+      <p class="display-6 text-center my-5">
+        We are a University College located in Lusaka which aims at promoting
+        quality but affordable education which will enhance the country's
+        economic growth and stability.
+      </p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#198754"
+        fill-opacity="1"
+        d="M0,224L60,202.7C120,181,240,139,360,133.3C480,128,600,160,720,176C840,192,960,192,1080,160C1200,128,1320,64,1380,32L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+
+    <!-- Showcase -->
+    <section class="bg-success text-light p-5 p-lg-0 text-center text-sm-start">
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h2>Our Programmes</h2>
+            <p class="h5 mt-5">
+              We are a center of excellence offering a range of sort-after
+              programmes from certificate to degree level.
+            </p>
+            <p class="h5 mt-3">
+              We equip our students with the skills, knowledge, and abilities to
+              excel in their sector. Moreover, we enables them to improve the
+              quality of life in their communities.
+            </p>
+          </div>
+          <img
+            class="img-fluid w-50 d-sm-block"
+            src="img/female-student2.png"
+            alt=""
+          />
+        </div>
+
+        <div class="row row-cols-1 text-dark row-cols-md-2 g-4 pb-5">
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Education Teaching</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Primary Teaching</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Teaching Methodolgy</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Diploma in Information Technology with Education
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Business Administration</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Banking and Finance</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Accountance</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Information Technology</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Public Relations</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Diploma in Human Resource Management</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5 my-5">
+      <div class="container">
+        <div class="row text-center text-success g-4">
+          <h2 class="text-center">Study at GPUC</h2>
+          <div class="col-md">
+            <div class="card bg-success text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <img
+                    src="img/Iconography-Grants_arrow-Dark-RGB.png"
+                    class="img-fluid rounded-circle shadow p-2"
+                    width="150px"
+                    alt="..."
+                  />
+                </div>
+                <h3 class="card-title mb-3">Requirements</h3>
+                <p class="card-text">
+                  To be eligible for courses and programmes, you must meet the
+                  general and specific entry requirements. These requirements
+                  differ depending on the level of the course or programme
+                  you've applied to.
+                </p>
+                <div class="d-grid gap-2">
+                  <a class="btn btn-light text-success" type="button"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-success text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <div class="h1 mb-3">
+                    <img
+                      src="img/Iconography-Trust-Dark-RGB.png"
+                      class="img-fluid rounded-circle shadow p-2"
+                      width="150px"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <h3 class="card-title mb-3">Fees & Funding</h3>
+                <p class="card-text">
+                  Find out the fees for our courses and learn about our
+                  scholarship. If you get a scholarship to our university, your
+                  studies are paid for by the university, limited spaces
+                  available.
+                </p>
+                <div class="d-grid gap-2">
+                  <a class="btn btn-light text-success" type="button"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-success text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <div class="h1 mb-3">
+                    <img
+                      src="img/Iconography-Policy-Dark-RGB.png"
+                      class="img-fluid rounded-circle shadow p-2"
+                      width="150px"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <h3 class="card-title mb-3">Apply Now!</h3>
+                <p class="card-text">
+                  Attain your academic goal, enroll with us. Apply for full-time
+                  part-time or distance learning.
+                </p>
+                <div class="d-grid gap-2">
+                  <a class="btn btn-light text-success" type="button"
+                    >Download Application Form</a
+                  >
+                  <a class="btn btn-light text-success" type="button"
+                    >Apply Online Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <img src="./img/cover.jpg" class="img-fluid shadow" width="100%" alt="" />
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Distance Learning</h2>
+            <p class="lead">
+              Our distance learning courses offer the opportunity to gain a
+              qualification from anywhere in the world.
+            </p>
+            <p class="lead">
+              Whether you’re an undergraduate, graduate, or transfer student,
+              you have multiple options when it comes to pursuing your degree.
+            </p>
+            <a href="#" class="btn btn-outline-success mt-3">
+              <i class="bi bi-chevron-right"></i> Learn More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="img/distance.png" class="img-fluid shadow pt-5" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Learn Sections -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img
+              src="img/scholarhips.png"
+              class="img-fluid rounded shadow"
+              alt=""
+            />
+          </div>
+          <div class="col-md p-5">
+            <h2>The KK Scholarship</h2>
+            <p class="lead">
+              Green Park University College supports and promotes the
+              development of education in our country as a resource to enrich
+              people’s lives, and a force for good in society. We have
+              established the KK Scholarship to support the marginalised and
+              underpriveledged in our society.
+            </p>
+            <p>
+              Our work aligns with our goals for the Internet to be open,
+              globally-connected, secure, and trustworthy. We seek collaboration
+              with all who share these goals.
+            </p>
+
+            <a href="#" class="btn btn-outline-danger mt-3">
+              <i class="bi bi-chevron-right"></i> Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> (+260) 976 942 468
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span>
+                greenparkuniversitycollege@gmail.com
+              </li>
+              <!-- <li class="list-group-item">
+                            <span class="fw-bold">Physical Address:</span> Plot 16948B,
+                            Thabo Mbeki Rd, Lusaka 10101
+                        </li> -->
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="h1 text-white">
+          <a href="https://twitter.com/#" target="new"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="https://www.facebook.com/#" target="new"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/#/" target="new"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </p>
+        <p class="lead">Copyright &copy; 2022 Green Park University College</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Send us a message.</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <iframe
+              id="JotFormIFrame-212431130799554"
+              title="Clone of General Inquiry Contact Form"
+              onload="window.parent.scrollTo(0,0)"
+              allowtransparency="true"
+              allowfullscreen="true"
+              allow="geolocation; microphone; camera"
+              src="https://form.jotform.com/212431130799554"
+              frameborder="0"
+              style="min-width: 100%; height: 539px; border: none"
+              scrolling="no"
+            >
+            </iframe>
+            <script type="text/javascript">
+              var ifr = document.getElementById(
+                "JotFormIFrame-212431130799554"
+              );
+              if (ifr) {
+                var src = ifr.src;
+                var iframeParams = [];
+                if (
+                  window.location.href &&
+                  window.location.href.indexOf("?") > -1
+                ) {
+                  iframeParams = iframeParams.concat(
+                    window.location.href
+                      .substr(window.location.href.indexOf("?") + 1)
+                      .split("&")
+                  );
+                }
+                if (src && src.indexOf("?") > -1) {
+                  iframeParams = iframeParams.concat(
+                    src.substr(src.indexOf("?") + 1).split("&")
+                  );
+                  src = src.substr(0, src.indexOf("?"));
+                }
+                iframeParams.push("isIframeEmbed=1");
+                ifr.src = src + "?" + iframeParams.join("&");
+              }
+              window.handleIFrameMessage = function (e) {
+                if (typeof e.data === "object") {
+                  return;
+                }
+                var args = e.data.split(":");
+                if (args.length > 2) {
+                  iframe = document.getElementById(
+                    "JotFormIFrame-" + args[args.length - 1]
+                  );
+                } else {
+                  iframe = document.getElementById("JotFormIFrame");
+                }
+                if (!iframe) {
+                  return;
+                }
+                switch (args[0]) {
+                  case "scrollIntoView":
+                    iframe.scrollIntoView();
+                    break;
+                  case "setHeight":
+                    iframe.style.height = args[1] + "px";
+                    break;
+                  case "collapseErrorPage":
+                    if (iframe.clientHeight > window.innerHeight) {
+                      iframe.style.height = window.innerHeight + "px";
+                    }
+                    break;
+                  case "reloadPage":
+                    window.location.reload();
+                    break;
+                  case "loadScript":
+                    if (
+                      !window.isPermitted(e.origin, [
+                        "jotform.com",
+                        "jotform.pro",
+                      ])
+                    ) {
+                      break;
+                    }
+                    var src = args[1];
+                    if (args.length > 3) {
+                      src = args[1] + ":" + args[2];
+                    }
+                    var script = document.createElement("script");
+                    script.src = src;
+                    script.type = "text/javascript";
+                    document.body.appendChild(script);
+                    break;
+                  case "exitFullscreen":
+                    if (window.document.exitFullscreen)
+                      window.document.exitFullscreen();
+                    else if (window.document.mozCancelFullScreen)
+                      window.document.mozCancelFullScreen();
+                    else if (window.document.mozCancelFullscreen)
+                      window.document.mozCancelFullScreen();
+                    else if (window.document.webkitExitFullscreen)
+                      window.document.webkitExitFullscreen();
+                    else if (window.document.msExitFullscreen)
+                      window.document.msExitFullscreen();
+                    break;
+                }
+                var isJotForm = e.origin.indexOf("jotform") > -1 ? true : false;
+                if (
+                  isJotForm &&
+                  "contentWindow" in iframe &&
+                  "postMessage" in iframe.contentWindow
+                ) {
+                  var urls = {
+                    docurl: encodeURIComponent(document.URL),
+                    referrer: encodeURIComponent(document.referrer),
+                  };
+                  iframe.contentWindow.postMessage(
+                    JSON.stringify({ type: "urls", value: urls }),
+                    "*"
+                  );
+                }
+              };
+              window.isPermitted = function (originUrl, whitelisted_domains) {
+                var url = document.createElement("a");
+                url.href = originUrl;
+                var hostname = url.hostname;
+                var result = false;
+                if (typeof hostname !== "undefined") {
+                  whitelisted_domains.forEach(function (element) {
+                    if (
+                      hostname.slice(-1 * element.length - 1) ===
+                        ".".concat(element) ||
+                      hostname === element
+                    ) {
+                      result = true;
+                    }
+                  });
+                  return result;
+                }
+              };
+              if (window.addEventListener) {
+                window.addEventListener("message", handleIFrameMessage, false);
+              } else if (window.attachEvent) {
+                window.attachEvent("onmessage", handleIFrameMessage);
+              }
+            </script>
+          </div>
+          <div class="modal-footer">
+            <!-- <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+      });
+    </script>
+  </body>
+</html>
