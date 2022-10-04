@@ -28,7 +28,8 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top shadow">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top shadow">
+      
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="/img/gpcu-logo.png" alt="" width="40px" />
@@ -50,6 +51,7 @@
             <li class="nav-item">
               <a href="about-gpuc.html" class="nav-link">About GPCU</a>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -68,6 +70,70 @@
               </ul>
             </li>
 
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Programmes
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Education Teaching</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Primary Teaching</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Teaching Methodology</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Information Technology with Education</a
+                  >
+                </li>
+
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Business Administration</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Banking and Finance</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Diploma in Accountancy</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Information Technology</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Public Relations</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Diploma in Human Resource Management</a
+                  >
+                </li>
+              </ul>
+            </li>
+
             <li class="nav-item">
               <a href="distance-learning.html" class="nav-link"
                 >Distance Learning</a
@@ -78,11 +144,16 @@
                 >The KK Scholarship</a
               >
             </li>
+
             <li class="nav-item">
-              <a href="subscribe.html" class="nav-link">Subscribe</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact-us" class="nav-link">Contact Us</a>
+              <a
+                data-bs-toggle="offcanvas"
+                href="#offcanvasExample"
+                role="button"
+                aria-controls="offcanvasExample"
+                class="nav-link"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
@@ -96,6 +167,14 @@
         quality but affordable education which will enhance the country's
         economic growth and stability.
       </p>
+      <p class="text-center">
+        <img
+          src="./img/gpcu-logo.png"
+          class="img-fluid"
+          alt="..."
+          width="120px"
+        />
+      </p>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
@@ -108,24 +187,28 @@
     <!-- Showcase -->
     <section class="bg-success text-light p-5 p-lg-0 text-center text-sm-start">
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
-            <h2>Our Programmes</h2>
-            <p class="h5 mt-5">
-              We are a center of excellence offering a range of sort-after
-              programmes from certificate to degree level.
-            </p>
-            <p class="h5 mt-3">
-              We equip our students with the skills, knowledge, and abilities to
-              excel in their sector. Moreover, we enables them to improve the
-              quality of life in their communities.
-            </p>
+        <div class="container text-center">
+          <div class="row">
+            <h2 class="display-4">Our Programmes</h2>
+            <div class="col-md-7">
+              <p class="lead mt-5">
+                We are a center of excellence offering a range of sort-after
+                programmes from certificate to degree level.
+              </p>
+              <p class="lead mb-5">
+                We equip our students with the skills, knowledge, and abilities
+                to excel in their sector. Moreover, we enables them to improve
+                the quality of life in their communities.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img
+                class="img-fluid d-sm-block"
+                src="img/female-student2.png"
+                alt=""
+              />
+            </div>
           </div>
-          <img
-            class="img-fluid w-50 d-sm-block"
-            src="img/female-student2.png"
-            alt=""
-          />
         </div>
 
         <div class="row row-cols-1 text-dark row-cols-md-2 g-5 pb-5">
@@ -176,7 +259,7 @@
           <div class="col">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">Diploma in Accountance</h5>
+                <h5 class="card-title">Diploma in Accountancy</h5>
               </div>
             </div>
           </div>
@@ -356,6 +439,33 @@
       </div>
     </section>
 
+    <!-- sms section start -->
+    <section class="my-5 bg-success">
+      <div class="container text-center pt-5">
+        <div class="row">
+          <div class="col-md-8 text-light">
+            <div class="container text-center py-5">
+              <h1 class="display-6 text-center">
+                Subscribe to updates via SMS for FREE
+              </h1>
+              <p class="lead text-light">
+                Learn about our programmes, fees & payment modes, scholaships,
+                and a lot more for FREE via SMS...
+              </p>
+              <p class="display-2">
+                SMS <span class="text-info">Greenpark</span> to <br />
+                <span class="text-info">0976 181 696</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="./img/sms.png" class="img-fluid" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- sms section end -->
+
     <!-- Contact & Map -->
     <section class="p-5">
       <div class="container">
@@ -406,181 +516,78 @@
       </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- sidepane start -->
     <div
-      class="modal fade"
-      id="enroll"
+      class="offcanvas offcanvas-start"
       tabindex="-1"
-      aria-labelledby="enrollLabel"
-      aria-hidden="true"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
     >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="enrollLabel">Send us a message.</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <iframe
-              id="JotFormIFrame-212431130799554"
-              title="Clone of General Inquiry Contact Form"
-              onload="window.parent.scrollTo(0,0)"
-              allowtransparency="true"
-              allowfullscreen="true"
-              allow="geolocation; microphone; camera"
-              src="https://form.jotform.com/212431130799554"
-              frameborder="0"
-              style="min-width: 100%; height: 539px; border: none"
-              scrolling="no"
-            >
-            </iframe>
-            <script type="text/javascript">
-              var ifr = document.getElementById(
-                "JotFormIFrame-212431130799554"
-              );
-              if (ifr) {
-                var src = ifr.src;
-                var iframeParams = [];
-                if (
-                  window.location.href &&
-                  window.location.href.indexOf("?") > -1
-                ) {
-                  iframeParams = iframeParams.concat(
-                    window.location.href
-                      .substr(window.location.href.indexOf("?") + 1)
-                      .split("&")
-                  );
-                }
-                if (src && src.indexOf("?") > -1) {
-                  iframeParams = iframeParams.concat(
-                    src.substr(src.indexOf("?") + 1).split("&")
-                  );
-                  src = src.substr(0, src.indexOf("?"));
-                }
-                iframeParams.push("isIframeEmbed=1");
-                ifr.src = src + "?" + iframeParams.join("&");
-              }
-              window.handleIFrameMessage = function (e) {
-                if (typeof e.data === "object") {
-                  return;
-                }
-                var args = e.data.split(":");
-                if (args.length > 2) {
-                  iframe = document.getElementById(
-                    "JotFormIFrame-" + args[args.length - 1]
-                  );
-                } else {
-                  iframe = document.getElementById("JotFormIFrame");
-                }
-                if (!iframe) {
-                  return;
-                }
-                switch (args[0]) {
-                  case "scrollIntoView":
-                    iframe.scrollIntoView();
-                    break;
-                  case "setHeight":
-                    iframe.style.height = args[1] + "px";
-                    break;
-                  case "collapseErrorPage":
-                    if (iframe.clientHeight > window.innerHeight) {
-                      iframe.style.height = window.innerHeight + "px";
-                    }
-                    break;
-                  case "reloadPage":
-                    window.location.reload();
-                    break;
-                  case "loadScript":
-                    if (
-                      !window.isPermitted(e.origin, [
-                        "jotform.com",
-                        "jotform.pro",
-                      ])
-                    ) {
-                      break;
-                    }
-                    var src = args[1];
-                    if (args.length > 3) {
-                      src = args[1] + ":" + args[2];
-                    }
-                    var script = document.createElement("script");
-                    script.src = src;
-                    script.type = "text/javascript";
-                    document.body.appendChild(script);
-                    break;
-                  case "exitFullscreen":
-                    if (window.document.exitFullscreen)
-                      window.document.exitFullscreen();
-                    else if (window.document.mozCancelFullScreen)
-                      window.document.mozCancelFullScreen();
-                    else if (window.document.mozCancelFullscreen)
-                      window.document.mozCancelFullScreen();
-                    else if (window.document.webkitExitFullscreen)
-                      window.document.webkitExitFullscreen();
-                    else if (window.document.msExitFullscreen)
-                      window.document.msExitFullscreen();
-                    break;
-                }
-                var isJotForm = e.origin.indexOf("jotform") > -1 ? true : false;
-                if (
-                  isJotForm &&
-                  "contentWindow" in iframe &&
-                  "postMessage" in iframe.contentWindow
-                ) {
-                  var urls = {
-                    docurl: encodeURIComponent(document.URL),
-                    referrer: encodeURIComponent(document.referrer),
-                  };
-                  iframe.contentWindow.postMessage(
-                    JSON.stringify({ type: "urls", value: urls }),
-                    "*"
-                  );
-                }
-              };
-              window.isPermitted = function (originUrl, whitelisted_domains) {
-                var url = document.createElement("a");
-                url.href = originUrl;
-                var hostname = url.hostname;
-                var result = false;
-                if (typeof hostname !== "undefined") {
-                  whitelisted_domains.forEach(function (element) {
-                    if (
-                      hostname.slice(-1 * element.length - 1) ===
-                        ".".concat(element) ||
-                      hostname === element
-                    ) {
-                      result = true;
-                    }
-                  });
-                  return result;
-                }
-              };
-              if (window.addEventListener) {
-                window.addEventListener("message", handleIFrameMessage, false);
-              } else if (window.attachEvent) {
-                window.attachEvent("onmessage", handleIFrameMessage);
-              }
-            </script>
-          </div>
-          <div class="modal-footer">
-            <!-- <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Submit</button> -->
-          </div>
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact Us</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Wrapper container -->
+        <div class="container py-4">
+          <p class="text-center">
+            Call us on <span class="fw-bold"></span> (+260) 976 942 468
+          </p>
+          <p class="text-center">Or leave us a message below.</p>
+
+          <!-- Bootstrap 5 starter form -->
+          <form id="contactForm">
+            <!-- Name input -->
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="Name"
+              />
+            </div>
+
+            <!-- Email address input -->
+            <div class="mb-3">
+              <label class="form-label" for="emailAddress">Email Address</label>
+              <input
+                class="form-control"
+                id="emailAddress"
+                type="email"
+                placeholder="Email Address"
+              />
+            </div>
+
+            <!-- Message input -->
+            <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                type="text"
+                placeholder="Message"
+                style="height: 10rem"
+              ></textarea>
+            </div>
+
+            <!-- Form submit button -->
+            <div class="d-grid">
+              <button class="btn btn-success btn-lg" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
 
+    <!-- sidepane end -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
